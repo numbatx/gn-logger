@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/numbatx/gn-logger/check"
+	"github.com/numbatx/gn-core/core/check"
 )
 
 var _ LogOutputHandler = (*logOutputSubject)(nil)

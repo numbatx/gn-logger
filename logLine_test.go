@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/numbatx/gn-logger"
-	"github.com/numbatx/gn-logger/marshal"
+	"github.com/numbatx/gn-core/marshal"
+	logger "github.com/numbatx/gn-logger"
 	"github.com/numbatx/gn-logger/proto"
 	"github.com/stretchr/testify/assert"
 )

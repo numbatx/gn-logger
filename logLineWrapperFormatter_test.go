@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/numbatx/gn-logger"
-	"github.com/numbatx/gn-logger/check"
+	"github.com/numbatx/gn-core/core/check"
+	logger "github.com/numbatx/gn-logger"
 	"github.com/numbatx/gn-logger/mock"
 	"github.com/stretchr/testify/assert"
 )
