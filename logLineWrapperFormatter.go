@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/numbatx/gn-logger/check"
+	"github.com/numbatx/gn-core/core/check"
 )
 
 // logLineWrapperFormatter converts the LogLineHandler into its marshalized form

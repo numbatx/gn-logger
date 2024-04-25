@@ -5,8 +5,8 @@ import (
 	goLog "log"
 	"os"
 
+	"github.com/numbatx/gn-core/marshal"
 	logger "github.com/numbatx/gn-logger"
-	"github.com/numbatx/gn-logger/marshal"
 	"github.com/numbatx/gn-logger/mock"
 	"github.com/numbatx/gn-logger/pipes"
 )
@@ -27,7 +27,7 @@ func main() {
 		goLog.Fatal("Cannot get pipe file: [logsWriter]")
 	}
 
-	part, err := pipes.NewChildPart(profileReader, logsWriter, &marshal.JSONMarshalizer{})
+	part, err := pipes.NewChildPart(profileReader, logsWriter, &marshal.JsonMarshalizer{})
 	if err != nil {
 		goLog.Fatal("Can't create part")
 	}
@@ -58,7 +58,7 @@ func main() {
 	barLog.Trace("bar-trace-yes")
 
 	fmt.Println("Here's some stdout")
-	fmt.Fprintln(os.Stderr, "Here's some stderr")
+	_, _ = fmt.Fprintln(os.Stderr, "Here's some stderr")
 
 	mock.SendDummySignal("done-step-2")
 }
