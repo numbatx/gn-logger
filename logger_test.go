@@ -1,11 +1,10 @@
 package logger_test
 
 import (
-	"github.com/numbatx/gn-core/core/check"
 	"sync/atomic"
-
 	"testing"
 
+	"github.com/numbatx/gn-core/core/check"
 	logger "github.com/numbatx/gn-logger"
 	"github.com/numbatx/gn-logger/mock"
 	"github.com/stretchr/testify/assert"
